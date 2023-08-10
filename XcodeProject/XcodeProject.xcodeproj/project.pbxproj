@@ -14,6 +14,7 @@
 		E5AB9E0E2A82FC030093FA47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AB9E0C2A82FC030093FA47 /* Main.storyboard */; };
 		E5AB9E102A82FC040093FA47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AB9E0F2A82FC040093FA47 /* Assets.xcassets */; };
 		E5AB9E132A82FC040093FA47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AB9E112A82FC040093FA47 /* LaunchScreen.storyboard */; };
+		E5AB9E1B2A8551560093FA47 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB9E1A2A8551560093FA47 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E5AB9E0F2A82FC040093FA47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5AB9E122A82FC040093FA47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5AB9E142A82FC040093FA47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5AB9E1A2A8551560093FA47 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				CC6BFAA0559B93EDDBB90273 /* Pods-XcodeProject.debug.xcconfig */,
 				D30D9FB3AAA7618519276034 /* Pods-XcodeProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -63,6 +64,7 @@
 		E5AB9DFA2A82FC030093FA47 = {
 			isa = PBXGroup;
 			children = (
+				E5AB9E1A2A8551560093FA47 /* CustomTableViewCell.swift */,
 				E5AB9E052A82FC030093FA47 /* XcodeProject */,
 				E5AB9E042A82FC030093FA47 /* Products */,
 				7A6650FC617333D46DE78E3A /* Pods */,
@@ -209,6 +211,7 @@
 			files = (
 				E5AB9E0B2A82FC030093FA47 /* ViewController.swift in Sources */,
 				E5AB9E072A82FC030093FA47 /* AppDelegate.swift in Sources */,
+				E5AB9E1B2A8551560093FA47 /* CustomTableViewCell.swift in Sources */,
 				E5AB9E092A82FC030093FA47 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
