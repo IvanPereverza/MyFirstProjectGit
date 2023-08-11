@@ -20,7 +20,11 @@ class ViewController: UIViewController {
     
     //MARK: - list
     
-    let list: [String] = ["Аист", "Бревно", "Велосипед"]
+    let list: [Test] = [
+        Test(header: "А", words: ["Аист", "Азбука"]),
+        Test(header: "Б", words: ["Бревно", "Берёза"]),
+        Test(header: "В", words: ["Велосипед", "Вилка"])
+    ]
 
     //MARK: - UI Elements
     
@@ -58,6 +62,7 @@ private extension ViewController {
     
     func setupSettings() {
         tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: CustomTableViewCell.identifier)
+        self.title = "Dictionary"
     }
 }
 
@@ -68,13 +73,45 @@ extension ViewController: UITableViewDataSource {
     //MARK: - cellForRowAt
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath)
-        cell.textLabel?.text = list[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as! CustomTableViewCell
+        cell.textLabel?.text = list[indexPath.section].words[indexPath.row]
         return cell
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    //MARK: - numberOfSections
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return list.count
+    }
+    
+    //MARK: - numberOfRowsInSection
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return list[section].words.count
+    }
+    
+    //MARK: - titleForHeaderInSection
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0: return "А"
+        case 1: return "Б"
+        case 2: return "В"
+        default:
+            return "UNKNOWNED"
+        }
+    }
+    
+    //MARK: - titleForFooterInSection
+    
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        switch section {
+        case 0: return "Words beggining on A"
+        case 1: return "Words beginning on Б"
+        case 2: return "Words beginning on В"
+        default:
+            return "INKNOWNED"
+        }
     }
 }
 
