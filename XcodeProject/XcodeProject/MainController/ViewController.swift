@@ -122,6 +122,7 @@ extension ViewController: UITableViewDelegate {
     //MARK: - didSelectRowAt
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let systemVC = SystemViewController()
+        navigationController?.pushViewController(systemVC, animated: true)
     }
 }

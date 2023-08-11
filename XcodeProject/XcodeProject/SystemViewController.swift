@@ -15,6 +15,13 @@ class SystemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+//        setup()
     }
     
+    //MARK: - UI Elements
+    
+    let label = UILabel()
+    
 }
+
