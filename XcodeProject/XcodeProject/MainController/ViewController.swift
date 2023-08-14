@@ -122,7 +122,17 @@ extension ViewController: UITableViewDelegate {
     //MARK: - didSelectRowAt
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let systemVC = SystemViewController()
-        navigationController?.pushViewController(systemVC, animated: true)
+        let firstVC = FirstViewController()
+        let secondVC = SecondViewController()
+        let thirdVC = ThirdViewController()
+        if indexPath.section == 0 {
+            navigationController?.pushViewController(firstVC, animated: true)
+        }
+        if indexPath.section == 1 {
+            navigationController?.pushViewController(secondVC, animated: true)
+        }
+        if indexPath.section == 2 {
+            navigationController?.pushViewController(thirdVC, animated: true)
+        }
     }
 }

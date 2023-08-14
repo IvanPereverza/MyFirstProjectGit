@@ -16,7 +16,9 @@
 		E5AB9E132A82FC040093FA47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AB9E112A82FC040093FA47 /* LaunchScreen.storyboard */; };
 		E5AB9E1B2A8551560093FA47 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB9E1A2A8551560093FA47 /* CustomTableViewCell.swift */; };
 		E5AB9E1E2A866F830093FA47 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB9E1D2A866F830093FA47 /* TestModel.swift */; };
-		E5AB9E202A8676620093FA47 /* SystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB9E1F2A8676620093FA47 /* SystemViewController.swift */; };
+		E5AB9E202A8676620093FA47 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB9E1F2A8676620093FA47 /* FirstViewController.swift */; };
+		E5AB9E242A8A1EC60093FA47 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB9E232A8A1EC60093FA47 /* SecondViewController.swift */; };
+		E5AB9E292A8A21610093FA47 /* ThirdNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB9E282A8A21610093FA47 /* ThirdNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +35,9 @@
 		E5AB9E142A82FC040093FA47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5AB9E1A2A8551560093FA47 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E5AB9E1D2A866F830093FA47 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
-		E5AB9E1F2A8676620093FA47 /* SystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemViewController.swift; sourceTree = "<group>"; };
+		E5AB9E1F2A8676620093FA47 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E5AB9E232A8A1EC60093FA47 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E5AB9E282A8A21610093FA47 /* ThirdNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThirdNavigationController.swift; path = /Users/ivan_pereverza/MyFirstProjectGit/XcodeProject/XcodeProject/MainController/NavigationControllers/ThirdNavigationController.swift; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +92,6 @@
 			children = (
 				E5AB9E062A82FC030093FA47 /* AppDelegate.swift */,
 				E5AB9E082A82FC030093FA47 /* SceneDelegate.swift */,
-				E5AB9E1F2A8676620093FA47 /* SystemViewController.swift */,
 				E5AB9E212A8676F70093FA47 /* MainController */,
 				E5AB9E0C2A82FC030093FA47 /* Main.storyboard */,
 				E5AB9E0F2A82FC040093FA47 /* Assets.xcassets */,
@@ -104,8 +107,19 @@
 				E5AB9E0A2A82FC030093FA47 /* ViewController.swift */,
 				E5AB9E1A2A8551560093FA47 /* CustomTableViewCell.swift */,
 				E5AB9E1D2A866F830093FA47 /* TestModel.swift */,
+				E5AB9E252A8A20290093FA47 /* NavigationControllers */,
 			);
 			path = MainController;
+			sourceTree = "<group>";
+		};
+		E5AB9E252A8A20290093FA47 /* NavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E5AB9E1F2A8676620093FA47 /* FirstViewController.swift */,
+				E5AB9E232A8A1EC60093FA47 /* SecondViewController.swift */,
+				E5AB9E282A8A21610093FA47 /* ThirdNavigationController.swift */,
+			);
+			path = NavigationControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,11 +238,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5AB9E0B2A82FC030093FA47 /* ViewController.swift in Sources */,
+				E5AB9E292A8A21610093FA47 /* ThirdNavigationController.swift in Sources */,
 				E5AB9E072A82FC030093FA47 /* AppDelegate.swift in Sources */,
 				E5AB9E1E2A866F830093FA47 /* TestModel.swift in Sources */,
-				E5AB9E202A8676620093FA47 /* SystemViewController.swift in Sources */,
+				E5AB9E202A8676620093FA47 /* FirstViewController.swift in Sources */,
 				E5AB9E1B2A8551560093FA47 /* CustomTableViewCell.swift in Sources */,
 				E5AB9E092A82FC030093FA47 /* SceneDelegate.swift in Sources */,
+				E5AB9E242A8A1EC60093FA47 /* SecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
